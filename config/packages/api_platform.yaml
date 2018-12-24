@@ -1,3 +1,17 @@
 api_platform:
+
+    #The title of the API.
+    title: 'Also API'
+
+    #The description of the API.
+    description: 'This API allows me to connect my applications to my database'
+
+    #The version of the API.
+    version: '1.0.0'
+
+    #Enable the FOSUserBundle integration.
+    # enable_fos_user: false
+
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
+        
