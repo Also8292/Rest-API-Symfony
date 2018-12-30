@@ -1,0 +1,47 @@
+easy_admin:
+   entities:
+#     # List the entity class name you want to manage
+     
+      # project entity
+      Projects:
+         class: App\Entity\Projects
+         list:
+            fields:
+               - { property: 'title', type: 'string' }
+               - { property: 'duration', type: 'string' }
+               - { property: 'description', type: 'string' }
+               - { property: 'image', type: 'image', base_path: '/images/projects' }
+      
+         show:
+            fields:
+               - { property: 'image', type: 'image', base_path: '/images/projects' }
+
+         form:
+            fields:
+               - { property: 'title', type: 'text' }
+               - { property: 'duration', type: 'text' }
+               - { property: 'description', type: 'textarea' }
+               - { property: 'imageFile', type: 'file' }
+
+
+      # Article entity
+      Articles:
+         class: App\Entity\Articles
+         list:
+            fields:
+               - { property: 'title', type: 'string' }
+               - { property: 'publication_date', type: 'date' }
+               - { property: 'content', type: 'text' }
+               - { property: 'image', type: 'image', base_path: '/images/projects' }
+               
+
+         show:
+            fields:
+               - { property: 'image', type: 'image', base_path: '/images/projects' }
+
+         form:
+            fields:
+               - { property: 'title', type: 'text' }
+               - { property: 'publication_date', type: 'date' }
+               - { property: 'content', type: 'textarea' }
+               - { property: 'imageFile', type: 'file' }
