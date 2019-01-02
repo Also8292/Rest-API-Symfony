@@ -1,0 +1,106 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+{% endblock %}
+
+{% block body %}
+    <!--<form method="post" action="{{ path('login') }}" accept-charset="UTF-8">
+        <h3>
+            <label for="loginName">Username or email</label>
+        </h3>
+        <input id="loginName" name="_username" type="text">
+        <h3>
+            <label for="password">Password</label>
+        </h3>
+        <input id="password" name="_password" type="password">
+            <button type="submit" class="btn btn-danger">Login</button>
+    </form>-->
+
+
+    <!-- Include the above in your HEAD tag -->
+    <section class="login-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 login-sec">
+                    <h2 class="text-center">ALSO Login</h2>
+                    <form class="login-form" method="post" action="{{ path('login')}}">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+                            <input class="form-control" name="_username" placeholder="username" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+                            <input class="form-control" name="_password" placeholder="password" type="password">
+                        </div>
+                        <div class="form-check">
+                            {# <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                                <small>Remember Me</small>
+                            </label> #}
+                            <button type="submit" class="btn btn-login float-right">Login</button>
+                        </div>
+                    </form>
+        
+                    <div class="copy-text">
+                        by
+                        <a href="#">ALSO</a>
+                    </div>
+                </div>
+                <div class="col-md-8 banner-sec">
+                    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img alt="First slide" class="d-block img-fluid" src="images/elephant.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="banner-text">
+                                        <h2>ALSO website admin</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img alt="First slide" class="d-block img-fluid" src="images/giraffe.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="banner-text">
+                                        <h2>This is Heaven</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img alt="First slide" class="d-block img-fluid" src="images/lion1.jpg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="banner-text">
+                                        <h2>This is Heaven</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                            
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+{% endblock %}
+        
